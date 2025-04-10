@@ -19,6 +19,39 @@
     }
   }
 
+//  Navbar toggle for mobile menu
+
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuIcon = document.getElementById('menuIcon');
+  const closeIcon = document.getElementById('closeIcon');
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('-translate-x-full');
+    mobileMenu.classList.toggle('-translate-x-full');
+
+    menuIcon.classList.toggle('hidden', !isOpen);
+    closeIcon.classList.toggle('hidden', isOpen);
+  });
+
+  // Navbar toggle for mobile menu end
+  // hamburger cut aniamation
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentURL = window.location.href;
+    const links = document.querySelectorAll(".mobile-link");
+
+    links.forEach(link => {
+      const href = link.href;
+
+      if (currentURL.includes(href)) {
+        // Add the notch (cut style)
+        const cut = document.createElement("div");
+        cut.className = "absolute -top-3 left-1/2 transform -translate-x-1/2 w-8 h-1 bg-[#FF2B06] rounded-full shadow-md";
+        link.classList.add("font-extrabold");
+        link.appendChild(cut);
+      }
+    });
+  });
   /**
    * Easy event listener function
    */

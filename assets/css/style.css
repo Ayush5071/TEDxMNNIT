@@ -182,7 +182,7 @@ a:hover {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
+/* #header {
 	background: rgba(255, 255, 255, 0.95);
 	transition: all 0.5s;
 	font-family: "Lato", sans-serif;
@@ -213,7 +213,7 @@ a:hover {
 
 .scrolled-offset {
 	margin-top: 70px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -221,7 +221,7 @@ a:hover {
 /**
 * Desktop Navigation
 */
-.navbar {
+/* .navbar {
 	padding: 0;
 }
 .navbar ul {
@@ -269,10 +269,9 @@ a:hover {
 	background: #e62b1e;
 	color: white;
 	transition: 0.5s;
-	/* border: 2px solid black; */
 	opacity: 100%;
-}
-
+} */
+/* 
 .navbar .dropdown ul {
 	display: block;
 	position: absolute;
@@ -332,11 +331,11 @@ a:hover {
 	img#optionalstuff {
 		display: none;
 	}
-}
+} */
 /**
 * Mobile Navigation
 */
-.mobile-nav-toggle {
+/* .mobile-nav-toggle {
 	color: #e62b1e;
 	font-size: 36px;
 	cursor: pointer;
@@ -430,7 +429,7 @@ a:hover {
 }
 .navbar-mobile .dropdown > .dropdown-active {
 	display: block;
-}
+} */
 
 /*--------------------------------------------------------------
 # Hero Section
